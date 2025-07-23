@@ -86,7 +86,26 @@ header {
      padding: 2rem 0;
      margin: 0 auto;
      margin-bottom: 0;
+     position: relative;
 }
+
+.horizontalMenu .btn {
+     width: fit-content;
+     position: absolute;
+     top: 50%;
+     right: 5%;
+     transform: translate(0%, -50%);
+    }
+ 
+.sticky {
+     position: fixed !important;
+     top: 5% !important;
+     right: 5% !important;
+     z-index: 1030 !important;
+     opacity: 1 !important;
+     transition: opacity 0.5s ;
+ }
+
 .horizontalMenu h2{
      display: flex;
      flex-flow: row nowrap;
@@ -104,14 +123,6 @@ header {
      display: none;
      margin-bottom: 2rem;
 }
-
-    .btn {
-     width: fit-content;
-     display: block;
-     position: fixed;
-     right: 2rem;
-     top: 2rem;
-    }
 
     .menuButton {
      background: #153548;
@@ -170,7 +181,6 @@ header {
     .dropMenu a:hover {
      transform: scale(1.2);
     }
-
 
 a div {
      opacity: 0;
