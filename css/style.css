@@ -49,12 +49,12 @@ body {
 }
 
 header {
-     background-image: url("../images/Digital\ Designs/Header Image.jpg");
+     background-image: url("../images/1-print-4493\ Mixson\ Ave\ CoastalRE-8.jpg");
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
      width: 100%;
-     height: 40rem;
+     height: 70rem;
      margin: 0 auto;
 }
 
@@ -81,41 +81,23 @@ header {
 
 .horizontalMenu {
      width: 100%;
-     height: 4rem;
+     height: fit-content;
      background: #153548;
-     padding: 0 20rem;
+     padding: 2rem 0;
      margin: 0 auto;
-     margin-bottom: 2rem;
+     margin-bottom: 0;
 }
-
-.horizontalMenu ul {
+.horizontalMenu h2{
      display: flex;
-     flex-flow: row wrap;
-     justify-content: space-evenly;
+     flex-flow: row nowrap;
      align-items: center;
-     height: 100%;
+     justify-content: center;
+     font-family: 'Panchang-Semibold';
+     font-size: 4vw;
+     color: #E5DFD2;
+     width: 100%;
+     padding: 0 9rem;
      margin: 0;
-}
-
-.horizontalMenu li {
-     list-style: none;
-     font-size: 1.6rem;
-}
-
-.horizontalMenu a {
-     text-decoration: none;
-     color: white;
-     display: inline-block;
-     transition: all 0.2s ease-in-out;
-     font-family: 'ClashDisplay-Semibold';
-}
-
-.horizontalMenu a:hover {
-     transform: scale(1.2);
-}
-
-.drop {
-     display: none;
 }
 
 .dropMenu {
@@ -123,23 +105,16 @@ header {
      margin-bottom: 2rem;
 }
 
-
-@media all and (max-width: 1250px) {
-    
-     .horizontalMenu {
-     display: none;
-    }
-
     .btn {
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     font-family: 'ClashDisplay-Semibold';
-     margin-top: 0;
+     width: fit-content;
+     display: block;
+     position: fixed;
+     right: 2rem;
+     top: 2rem;
     }
 
     .menuButton {
-     background: transparent;
+     background: #153548;
      border: none;
      color: white;
      font-size: 2rem;
@@ -148,25 +123,19 @@ header {
      display: flex;
      justify-content: center;
      transition: all .2s ease-in-out;
+     border-radius: 50%;
+     padding: 1rem;
     }
 
     .menuButton:hover {
      transform: scale(1.2);
     }
 
-    .drop {
-     width: 100%;
-     height: 4rem;
-     background: #153548;
-     padding: 0;
-     margin: 0 auto;
-     display: flex;
-     align-items: center;
-    }
 
 
     .dropMenu {
-     width: 100%;
+     width: 20%;
+     height: 100%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
@@ -201,60 +170,13 @@ header {
     .dropMenu a:hover {
      transform: scale(1.2);
     }
-}
 
-
-.selections {
-     width: 100%;
-     display: flex;
-     flex-flow: nowrap row;
-     padding: 1rem 4rem 5rem 4rem;
-     position: relative;
-}
-
-.selections a {
-     background-clip: padding-box;
-     width: 33.33%;
-     height: 50rem;
-     display: flex;
-     /* border: 10px solid transparent; */
-     cursor: pointer;
-     text-decoration: none;
-     overflow: hidden;
-     position: relative;
-     border: 1px solid black;
-     margin: 0 5px;
-}
 
 a div {
      opacity: 0;
      width: 100%;
      height: 100%;
      background: black;
-}
-
-.selections div:hover {
-     opacity:0.2;
-     width: 100%;
-     height: 100%;
-     display: flex;
-     border: 1rem solid transparent;
-     cursor: pointer;
-     text-decoration: none;
-     transition: all .3s ease-in-out;
-}
-
-.selections h2 {
-     font-size: 2.5rem;
-     font-family: 'Panchang-Semibold';
-     color: white;
-     display: flex;
-     align-items: flex-end;
-     text-shadow: 1px 1px 1px black;
-     margin: 0 0 2rem 2rem;
-     position: absolute;
-     bottom: 0;
-     z-index: 1;
 }
 
 @media all and (max-width: 800px) {
@@ -265,40 +187,6 @@ a div {
           width: 100%;
           height: 18rem;
           margin: 0 auto;
-     }
-     
-     .selections {
-          width: 100%;
-          display: flex;
-          padding: 0 4rem 5rem 4rem;
-          position: relative;
-          flex-flow: wrap row;
-     }
-
-     .selections a {
-          background-clip: padding-box;
-          width: 100%;
-          height: 15rem;
-          display: flex;
-          border: 10px solid transparent;
-          cursor: pointer;
-          text-decoration: none;
-          overflow: hidden;
-          position: relative;
-          border: 1px solid black;
-          margin: 1rem 0;
-     }
-
-     .selections h2 {
-          font-size: 2rem;
-          color: white;
-          display: flex;
-          align-items: flex-end;
-          text-shadow: 1px 1px 1px black;
-          margin: 0 0 1rem 1rem;
-          position: absolute;
-          bottom: 0;
-          z-index: 1;
      }
 
      .boards {
@@ -312,9 +200,9 @@ a div {
 
 footer {
      width: 100%;
-     height: 5rem;
+     height: fit-content;
+     padding: 1rem 0;
      background: transparent;
-     margin-bottom: 5px;
 }
 
 footer ul {
@@ -538,6 +426,7 @@ img:hover:not(.fullSize) {
           z-index: 5;
      }
 }
+
 /******************************************
 /* LAYOUT
 /*******************************************/
