@@ -54,14 +54,64 @@ body {
 /* HEADER SECTION */
 
 header {
-     background-image: url("../images/1-print-4493\ Mixson\ Ave\ CoastalRE-8.jpg");
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/1-print-4493\ Mixson\ Ave\ CoastalRE-8.jpg");
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
      width: 100%;
-     height: 70vh;
+     height: 90vh;
      margin: 0 auto;
+     padding: 10% 0 10% 10%;
+     display: flex;
+     flex-flow: column wrap;
+     align-items: flex-start;
+     justify-content: center;
+
+}
+
+header h1{
+     color: #E5DFD2;
+     font-size: clamp(3rem, 5vw, 6rem);
+     font-family: 'ClashDisplay-Semibold';
+     padding-right: 33%;
+     margin: 0;
+     text-shadow:
+     1px 1px 0 #153548,   /* Bottom-right shadow */
+     -1px 1px 0 #153548,  /* Bottom-left shadow */
+     1px -1px 0 #153548,  /* Top-right shadow */
+     -1px -1px 0 #153548; /* Top-left shadow */
+}
+
+header h4{
+     padding-right: 45%;
+     font-size: 1.8vw;
+     color: #ca6c00;
+     margin: 1rem 0 3rem 0;
+     text-shadow:
+     1px 1px 0 #153548,   /* Bottom-right shadow */
+     -1px 1px 0 #153548,  /* Bottom-left shadow */
+     1px -1px 0 #153548,  /* Top-right shadow */
+     -1px -1px 0 #153548; /* Top-left shadow */
+}
+
+header button{
+     padding: 1.5rem 2.25rem;
+     color: #153548;
+     background-color: #E5DFD2;
+     border: #153548 2px solid;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: all 0.2s;
+     font-size: 1.5rem;
+     font-family: 'ClashDisplay-Semibold';
+     margin: 4rem 0 0 0;
+}
+
+header button:hover{
+     border: #ca6c00 2px solid;
+     color: #ca6c00;
+     scale: 1.05;
 }
 
 /* VERTICAL MENU SECTION */
@@ -70,7 +120,7 @@ header {
      width: 100%;
      height: fit-content;
      background: #153548;
-     padding: 2rem 0;
+     padding: 1rem 0;
      margin: 0 auto;
      margin-bottom: 0;
      position: relative;
@@ -94,7 +144,7 @@ body .horizontalMenu .sticky {
      transition: opacity 0.5s ;
  }
 
-.horizontalMenu h2{
+.horizontalMenu a{
      display: flex;
      flex-flow: row nowrap;
      align-items: center;
@@ -104,6 +154,11 @@ body .horizontalMenu .sticky {
      color: #E5DFD2;
      width: 100%;
      padding: 0 9rem;
+     margin: 0;
+     text-decoration: none;
+}
+
+.horizontalMenu h2{
      margin: 0;
 }
 
@@ -296,6 +351,11 @@ h3{
 
 /* ARTWORK SECTION */
 
+.artworkLink{
+     background-color: #E5DFD2;
+     padding: 3rem 0;
+}
+
 .artworkLink div{
      display: flex;
      flex-flow: row wrap;
@@ -304,6 +364,8 @@ h3{
 .artworkLink h2{
      width: 100%;
      text-align: center;
+     color: black;
+     padding: 0 8rem;
 }
 
 .col-1-3,
