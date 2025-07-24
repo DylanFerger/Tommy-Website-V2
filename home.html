@@ -18,7 +18,7 @@
 	</head>
 	<body class="homeBody">
 		<!-- Navigation -->
-		<nav class="horizontalMenu" >
+		<nav class="section horizontalMenu" >
 				<h2>ART FiTZ EVERYWHERE</h2>
 				<div class="btn" id="menu"><button class="menuButton" id="openMenu1"><i class="fas fa-bars"></i></button></div>
 		</nav>
@@ -37,26 +37,67 @@
 		<!-- Header -->
 		<header></header>
 		<!-- Our Story Section -->
-		<section class="ourStoryLink">
+		<section class="section ourStoryLink">
 			<div>
-				<h2>Creating art that doesn't just fill a space, it <span> defines</span> it.</h2>
+				<h2>Creating <span>art</span> that doesn't just fill a space, it <span> defines</span> it.</h2>
 				<p>Don’t just decorate, transform your walls into living stories. Our art brings bold expression and immersive beauty to any space, turning blank surfaces into vibrant canvases that reflect your spirit, your culture, and your vision. Whether it's a sweeping landscape, abstract energy, or a narrative rooted in identity, our art breathes life into the everyday. It’s not just art, it’s atmosphere.</p>
+				<button>OUR STORY</button>
 			</div>
 			<div>
 				<img src="images/3-print-4493 Mixson Ave CoastalRE-15.jpg" alt="">
 			</div>
 		</section>
 		<!-- Artwork Section -->
-		<section class="artworkLink">
-
+		<section class="section artworkLink">
+			<h2>Our Work</h2>
+			<div class="center">
+				<div class="col-1-3">
+					<h3>Murals</h3>
+					<p>Mural art turns space into story. It’s more than paint on a wall—it’s atmosphere, emotion, and expression woven into scale. Each mural is a one-of-a-kind piece made to breathe life, energy, and meaning into the environments we move through.</p>
+				</div>
+				<div class="col-2-3">
+					<h3>Branding Art</h3>
+					<p>Branding art is where identity meets imagination. It’s the visual soul of your brand—handcrafted, intentional, and full of character. Through custom illustrations, murals, and design elements, it tells your story in a way that feels real, artful, and unforgettable.</p>
+				</div>
+				<div class="col-3-3">
+					<h3>Custom Submissions</h3>
+					<p>Custom artwork is art made just for you—with intention, meaning, and soul. Whether it’s a personal piece, a gift, or something bold for your space, each design is thoughtfully crafted to reflect your story, your style, and your vision.</p>
+				</div>
+			</div>
 		</section>
 		<!-- Reviews Section -->
-		<section>
-
+		<section class="section reviewLink">
+			<h2 id="reviewHeader">What People Are Saying</h2>
+			<div>
+				<img src="images/Headshots/HS_1.jpg" alt="" class="reviewPhoto">
+			</div>
+			<div>
+				<p></p>
+			</div>
 		</section>
 		<!-- Contact Section -->
-		<section class="contactLink">
+		<section class="section contactLink">
+			<div class="center">
+				<h2>Contact Us</h2>
+			</div>
 
+			<form name="contact" method="post" data-netlify="true" onSubmit="submit">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+			  
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			  
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" name="subject" required>
+		
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+			  
+				<div class="center">
+					<button type="submit" class="submitButton">Submit</button>
+				</div>			  
+			</form>
 		</section>
 	<!-- Footer -->
 		<footer>
