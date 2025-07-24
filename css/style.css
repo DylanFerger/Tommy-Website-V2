@@ -196,20 +196,56 @@ body .horizontalMenu .sticky {
      padding: 3rem;
 }
 div h2{
-     display: flex;
      font-family: 'clash-display-Regular';
      font-size: 4rem;
 }
 div p{
-     display: flex;
      font-family: 'clash-display-Regular';
      font-size: 2rem;
 }
 
 div img{
-     height: 40rem;
-     width: fit-content;
+     height: auto;
+     width: 100%;
 }
+
+span{
+     font-family: 'clash-display-Regular'; 
+     text-decoration: underline;
+}
+
+@media all and (max-width: 1000px) {
+
+     .ourStoryLink{
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+     }
+     .ourStoryLink div{
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          padding: 3rem;
+     }
+     div h2{
+          font-family: 'clash-display-Regular';
+          font-size: 4rem;
+          text-align: center;
+     }
+     div p{
+          font-family: 'clash-display-Regular';
+          font-size: 2rem;
+          text-align: center;
+     }
+     
+     div img{
+          height: auto;
+          width: 100%;
+     }
+
+ }
 
 footer {
      width: 100%;
