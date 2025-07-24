@@ -44,39 +44,16 @@ body {
      margin: -1.2rem 0 0 0;
 }
 
-.homeBody {
-     margin: 0;
-}
 
 header {
      background-image: url("../images/1-print-4493\ Mixson\ Ave\ CoastalRE-8.jpg");
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
+     background-position: center;
      width: 100%;
-     height: 70rem;
+     height: 70vh;
      margin: 0 auto;
-}
-
-.murals {
-     background-image: url("../images/Mural\ Art/Flower mural.jpg");
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-
-.boards {
-     background-image: url("../images/Board art/Untitled_Artwork\ 1.jpg");
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-
-.illustrations{
-     background-image: url("../images/Digital\ Designs/DMT butterfly.jpg");
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
 }
 
 .horizontalMenu {
@@ -87,6 +64,7 @@ header {
      margin: 0 auto;
      margin-bottom: 0;
      position: relative;
+     margin-top: 1rem;
 }
 
 .horizontalMenu .btn {
@@ -97,11 +75,11 @@ header {
      transform: translate(0%, -50%);
     }
  
-.sticky {
-     position: fixed !important;
-     top: 5% !important;
-     right: 5% !important;
-     z-index: 1030 !important;
+body .horizontalMenu .sticky {
+     position: fixed;
+     top: 5%;
+     right: 5%;
+     z-index: 1030;
      opacity: 1 !important;
      transition: opacity 0.5s ;
  }
@@ -119,11 +97,6 @@ header {
      margin: 0;
 }
 
-.dropMenu {
-     display: none;
-     margin-bottom: 2rem;
-}
-
     .menuButton {
      background: #153548;
      border: none;
@@ -136,77 +109,107 @@ header {
      transition: all .2s ease-in-out;
      border-radius: 50%;
      padding: 1rem;
+     z-index: 100;
     }
 
     .menuButton:hover {
      transform: scale(1.2);
     }
 
-
+    #openMenu2{
+     background: #2A5271;
+     margin-bottom: 2.5rem;
+     margin-left: -1rem;
+    }
 
     .dropMenu {
-     width: 20%;
-     height: 100%;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
+     width: 0;
+     height: 100vh;
+     position: fixed;
+     right: 0;
+     top: 0;
      background: #2A5271;
-     margin: 0 auto;
-     max-height: 0;
+     padding-top: 2rem;
      overflow: hidden;
+     z-index: 10001;
      transition: all 0.5s ease-in-out;
     }
 
-    .dropMenu.openMenu {
-     max-height: 20rem;
+    .openMenu {
+     position: fixed;
+     width: 25% !important;
     }
 
     .dropMenu ul {
      padding: 0;
      width: 100%;
+     margin: 0 0 0 2rem;
      list-style: none;
-     text-align: center;
+     text-align: left;
+    }
+
+    .dropMenu li{
+     display: block;
+     position: relative;
+     width: fit-content;
+     margin-bottom: 1rem;
+    }
+
+    .dropMenu li::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0); /* Hide initially */
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #ca6c00; /* Choose your desired color */
+     transform-origin: bottom right; /* Animation direction */
+     transition: transform 0.2s ease-out; /* Transition for smoothness */   
+    }
+
+    .dropMenu li:first-child ~ li:hover::after{
+     transform: scaleX(1); /* Show on hover */
+     transform-origin: bottom left; /* Animation direction on hover */
     }
     
     .dropMenu a {
      text-decoration: none;
      color: white;
-     line-height: 2.7rem;
-     font-size: 1.5rem;
+     line-height: 3.5rem;
+     font-size: 2rem;
      display: inline-block;
      font-family: 'ClashDisplay-Semibold';
      transition: all .2s ease-in-out;
     }
 
-    .dropMenu a:hover {
-     transform: scale(1.2);
-    }
-
-a div {
-     opacity: 0;
+.ourStoryLink{
      width: 100%;
-     height: 100%;
-     background: black;
+     display: flex;
+}
+.ourStoryLink div{
+     width: 50%;
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     justify-content: center;
+     padding: 3rem;
+}
+div h2{
+     display: flex;
+     font-family: 'clash-display-Regular';
+     font-size: 4rem;
+}
+div p{
+     display: flex;
+     font-family: 'clash-display-Regular';
+     font-size: 2rem;
 }
 
-@media all and (max-width: 800px) {
-     header {
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 100%;
-          height: 18rem;
-          margin: 0 auto;
-     }
-
-     .boards {
-          background-image: url("../images/Board art/horizontal.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-     }
+div img{
+     height: 40rem;
+     width: fit-content;
 }
-
 
 footer {
      width: 100%;
@@ -369,72 +372,6 @@ img:hover:not(.fullSize) {
      border-radius: 5%;
      padding: 8px;
      z-index: 2;
-}
-
-@media all and (max-width: 800px) {
-     .align {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          flex-flow: column wrap;
-     }
-
-     img {
-          width: 90%;
-          height: auto;
-          margin: 1rem 0;
-     }
-
-     #toTop {
-          position: fixed;
-          bottom: 10px;
-          right: 10px;
-          text-decoration: none;
-          color: white;
-          background: black;
-          border-radius: 5%;
-          padding: 8px;
-          z-index: 2;
-     }
-}
-
-@media all and (min-width: 0px) {
-.fullSize {
-     box-sizing: unset;
-     position: fixed;
-     display: flex;
-     align-items: center;
-     max-width: 80%;
-     top: 50%;
-     left: 50%;
-     margin: auto;
-     transform: translate(-50%, -50%);
-     transition: all 0s;
-     border: 500px solid rgba(100, 100, 100, 0.9);
-     overflow: hidden;
-     z-index: 5;
-}
-}
-
-@media all and (min-width: 800px) {
-    
-     .fullSize {
-          box-sizing: unset;
-          position: fixed;
-          display: flex;
-          align-items: center;
-          max-width: 80%;
-          max-height: 100%;
-          min-height: 80%;
-          top: 50%;
-          left: 50%;
-          margin: auto;
-          transform: translate(-50%, -50%);
-          transition: all 0s;
-          border: 500px solid rgba(100, 100, 100, 0.9);
-          overflow: hidden;
-          z-index: 5;
-     }
 }
 
 /******************************************
