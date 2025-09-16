@@ -182,7 +182,7 @@ body .horizontalMenu .sticky {
     .menuButton {
      background: #153548;
      border: none;
-     color: white;
+     color: #E5DFD2;
      font-size: 2rem;
      cursor: pointer;
      width: fit-content;
@@ -261,9 +261,9 @@ body .horizontalMenu .sticky {
     
     .dropMenu a {
      text-decoration: none;
-     color: white;
-     line-height: 3.5rem;
-     font-size: 2rem;
+     color: #E5DFD2;
+     line-height: 5rem;
+     font-size: 3rem;
      display: inline-block;
      font-family: 'ClashDisplay-Semibold';
      transition: all .2s ease-in-out;
@@ -281,7 +281,7 @@ body .horizontalMenu .sticky {
           }
      
           .horizontalMenu{
-               padding: 1rem 0;
+               padding: 1.5rem 0;
           }
           
           .menuButton{
@@ -603,18 +603,46 @@ footer p {
 
 .ourStoryPage {
      margin: 5rem;
-     padding: 2rem;
+     padding: 5rem;
      background-color: #dad5c8;
      border-radius: 50px;
+     display: flex;
+     flex-flow: row wrap;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.ourStoryPage h2{
+.ourStoryPage div + div{
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     justify-content: center;
+     flex: 1 0 30%;
+}
+
+.ourStoryPage div + div + div{
+     display: flex;
+     flex-flow: column;
+     align-content: flex-start;
+     justify-content: center;
+     flex: 1 0 70%;
+}
+
+#storyH2{
      margin-bottom: 7rem;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+#storyH2 h2{
+     width: fit-content;
+     border-bottom: 5px solid black;
+     padding: 0 30% 5rem 30%;
 }
 
 .ourStoryPage p{
      font-family: 'clash-display-Regular';
      font-weight: 600;
-     padding: 0 5rem;
+     padding-left: 5rem;
      line-height: 2.75rem;
 }
