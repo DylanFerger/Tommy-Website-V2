@@ -658,6 +658,21 @@ footer p {
      line-height: 2.75rem;
 }
 
+/* Our Process Page */
+
+.ourProcessPage {
+     margin: 5rem;
+     padding: 5rem;
+     background-color: #dad5c8;
+     border-radius: 50px;
+     display: flex;
+     flex-flow: row wrap;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media */
+
 @media all and (max-width: 500px) {
      
      .subheader{
