@@ -393,7 +393,7 @@ section a:hover{
      .ourStoryLink{
           width: 100%;
           display: flex;
-          flex-flow: column;
+          flex-flow: column wrap;
      }
      .ourStoryLink div{
           width: 100%;
@@ -440,11 +440,13 @@ h3{
 .artworkLink{
      background-color: #dad5c8;
      padding: 3rem 0;
+     height: fit-content;
 }
 
 .artworkLink div{
      display: flex;
      flex-flow: row wrap;
+     align-items: flex-start;
 }
 
 .artworkLink h2{
@@ -452,6 +454,10 @@ h3{
      text-align: center;
      color: black;
      padding: 0 8rem;
+}
+
+.artworkLink h3{
+     color: white;
 }
 
 .col-1-3,
@@ -462,6 +468,13 @@ h3{
      align-items: center;
      justify-content: center;
      padding: 0 4rem;
+     margin-top: 4rem;
+}
+
+.col-1-3 p,
+.col-2-3 p,
+.col-3-3 p{
+     margin-top: 3.5rem;
 }
 
 .col-1-3 h3,
@@ -469,6 +482,11 @@ h3{
 .col-3-3 h3{
      font-size: 3rem;
      margin-bottom: 2rem;
+     text-shadow:
+     1px 1px 0 black,   /* Bottom-right shadow */
+     -1px 1px 0 black,  /* Bottom-left shadow */
+     1px -1px 0 black,  /* Top-right shadow */
+     -1px -1px 0 black; /* Top-left shadow */
 }
 
 .col-1-3 p,
@@ -476,6 +494,41 @@ h3{
 .col-3-3 p{
      font-size: 2rem;
      text-align: center;
+}
+
+.colBackground1-3{
+     width: 100%;
+     height: 30rem;
+     background-image: url("../images/art/dji_fly_20251014_114558_739_1760436575976_photo.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+     display: flex;
+     justify-content: center;
+}
+
+.colBackground2-3{
+     width: 100%;
+     height: 30rem;
+     background-image: url("../images/New\ Photos/Wild\ barbell\ .jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+}
+
+.colBackground3-3{
+     width: 100%;
+     height: 30rem;
+     background-image: url("../images/New\ Photos/paintbrush.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
 }
 
 @media all and (max-width: 500px) {
@@ -526,6 +579,7 @@ h3{
 
 .contactLink{
      padding: 0 3rem 3rem 3rem;
+     background-color: #dad5c8;
 }
 
 .contact {
@@ -669,6 +723,37 @@ footer p {
      line-height: 2.75rem;
 }
 
+@media all and (max-width: 500px) {
+
+     .ourStoryPage{
+          margin: 5rem 2rem;
+          padding: 5rem 2rem;
+     }
+
+     .ourStoryPage div + div{
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          flex: 1 0 100%;
+     }
+     
+     .image{
+          display: flex;
+          flex-flow: column;
+          align-content: flex-start;
+          justify-content: center;
+          flex: 1 0 100%;
+     }
+
+     .ourStoryPage p{
+          font-family: 'clash-display-Regular';
+          font-weight: 600;
+          padding-left: 0;
+          line-height: 2.75rem;
+          margin-top: 3rem;
+     }
+}
 /* Our Process Page */
 
 .ourProcessPage {
@@ -703,6 +788,16 @@ footer p {
      margin: 1rem 0 0rem 0;
      font-family: 'clash-display-Regular';
 }
+
+
+@media all and (max-width: 500px) {
+
+     .ourProcessPage{
+          margin: 5rem 2rem;
+          padding: 5rem 2rem;
+     }
+}
+
 /* Media */
 
 @media all and (max-width: 500px) {
