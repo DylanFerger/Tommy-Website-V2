@@ -116,7 +116,7 @@ header a:hover{
      scale: 1.05;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 850px) {
      
      header h1{
           font-size: clamp(3rem, 9vw, 6rem);
@@ -388,7 +388,7 @@ section a:hover{
 
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 850px) {
 
      .ourStoryLink{
           width: 100%;
@@ -723,7 +723,7 @@ footer p {
      line-height: 2.75rem;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 850px) {
 
      .ourStoryPage{
           margin: 5rem 2rem;
@@ -791,7 +791,7 @@ footer p {
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 850px) {
 
      .ourProcessPage{
           margin: 5rem 2rem;
@@ -801,7 +801,7 @@ footer p {
 
 /* Media */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 850px) {
      
      .subheader{
           font-size: 3rem !important;
