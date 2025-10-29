@@ -863,7 +863,7 @@ footer p {
           height: clamp(220px, 40vw, 380px); /* 👈 responsive height */
           background: white;
           border-radius: 20px;
-          overflow: hidden;
+          overflow-x: visible;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
           transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           cursor: pointer;
@@ -872,7 +872,6 @@ footer p {
      
         .card img {
           display: block;
-          width: 100%;
           height: 100%;
           width: auto; /* lets card take the natural width of image */
           object-fit: cover;
