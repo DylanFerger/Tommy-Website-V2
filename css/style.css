@@ -839,7 +839,6 @@ footer p {
      
      .carousel-container {
           width: 100%;
-          max-width: 1200px;
           height: 450px;
           position: relative;
           perspective: 1000px;
@@ -859,25 +858,28 @@ footer p {
      
      .card {
           position: absolute;
-          /* width: 280px; */
-          width: fit-content;
-          height: 380px;
+          display: inline-block; /* critical for Safari sizing */
+          width: auto;           /* fallback that works exactly like fit-content here */
+          max-width: 90vw;       /* optional safety limit for very large images */
+          height: clamp(220px, 40vw, 380px); /* 👈 responsive height */
           background: white;
           border-radius: 20px;
           overflow: hidden;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
           transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           cursor: pointer;
-     }
+        }
+        
      
-     .card img {
-          width: 100%;
+        .card img {
+          display: block;
           height: 100%;
+          width: auto; /* lets card take the natural width of image */
           object-fit: cover;
           transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
 
-     }
-     
      .card.center {
           z-index: 10;
           transform: scale(1.1) translateZ(0);
