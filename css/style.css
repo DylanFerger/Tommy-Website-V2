@@ -1023,6 +1023,7 @@ footer p {
           border: none;
           outline: none;
           padding-bottom: 4px;
+          margin: 0 1%;
      }
      
      .nav-arrow:hover {
