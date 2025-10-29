@@ -37,6 +37,7 @@ html {
 * {
      font-family: sans-serif, serif;
      font-weight: 600;
+     overflow-x: hidden;
 }
 
 h1 {
