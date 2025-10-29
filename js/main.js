@@ -1,3 +1,5 @@
+screen.orientation.lock();
+
 const button1 = document.getElementById('openMenu1');
 const button2 = document.getElementById('openMenu2');
 
