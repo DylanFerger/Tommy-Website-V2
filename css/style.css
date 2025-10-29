@@ -858,7 +858,9 @@ footer p {
      
      .card {
           position: absolute;
-          display: inline-block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: auto;
           height: clamp(220px, 40vw, 380px); /* 👈 responsive height */
           background: white;
@@ -875,8 +877,12 @@ footer p {
           height: 100%;
           width: auto; /* lets card take the natural width of image */
           object-fit: cover;
+          object-position: center;
           transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          position: absolute;
+          margin: 0 auto;
         }
+
         
 
      .card.center {
