@@ -55,6 +55,18 @@ body {
 
 /* HEADER SECTION */
 
+#subheader img {
+     display: block;
+     width: 100%;    /* scales with container */
+     height: auto;
+   }
+   #subheader {
+     height: fit-content;
+     padding: 0;
+     position: relative;
+     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+   }
+
 header {
      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/1-print-4493\ Mixson\ Ave\ CoastalRE-8.jpg");
      background-position: center;
@@ -278,6 +290,35 @@ body .horizontalMenu .sticky {
      transition: all .2s ease-in-out;
     }
 
+    @media all and (max-width: 850px) {
+     
+     .openMenu {
+          position: fixed;
+          width: 50% !important;
+         }
+     
+          .horizontalMenu h2 a{
+               font-size: 1.5rem;
+          }
+     
+          .horizontalMenu{
+               padding: 1.5rem 0;
+          }
+          
+          .menuButton{
+               font-size: 1.5rem;
+          }
+     
+          .dropMenu{
+               padding: 0.5rem 0;
+          }
+
+          .dropMenu a{
+               font-size: 2.5rem;
+               line-height: 3.5rem;
+          }
+     }
+
     @media all and (max-width: 500px) {
      
      .openMenu {
@@ -306,6 +347,7 @@ body .horizontalMenu .sticky {
                line-height: 2rem;
           }
      }
+
 
 
 /* OUR STORY SECTION */
@@ -669,13 +711,6 @@ footer p {
      color: #153548;
      display: flex;
      justify-content: center;
-}
-
-/* Subheader */
-
-#subheader{
-     padding: 0;
-     height: 20vh;
 }
 
 /* Our Story Page */
