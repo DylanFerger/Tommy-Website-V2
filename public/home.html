@@ -16,6 +16,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="//www.google.com/recaptcha/api.js"></script>
 	</head>
 	<body class="homeBody">
 		<!-- Navigation -->
@@ -135,7 +136,7 @@
 				<h2 id="contactUs" class="subheader">Contact Us</h2>
 			</div>
 
-			<form name="contact" method="post" data-netlify="true" onSubmit="submit">
+			<form class="contact-form">
 				<label for="name">Name</label>
 				<input type="text" id="name" name="name" required>
 			  
@@ -147,9 +148,9 @@
 		
 				<label for="message">Message</label>
 				<textarea id="message" name="message" required></textarea>
-			  
+				<div class="g-recaptcha" data-sitekey="6LcymwMsAAAAAMnfWnHNQXRcPUJidYeBn5sBXBY3"></div>
 				<div class="center">
-					<button type="submit" class="submitButton">Submit</button>
+					<button type="submit" class="submitButton" value="Send message">Submit</button>
 				</div>			  
 			</form>
 		</section>
@@ -162,6 +163,6 @@
 			<p>&copy2025 &#x2022 All rights reserved &#x2022 Tommy Dunn</p>
 		</footer>
 
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
