@@ -135,7 +135,8 @@
 				<h2 id="contactUs" class="subheader">Contact Us</h2>
 			</div>
 
-			<form class="contact-form">
+			<form class="contact-form" name="contact" method="POST" data-netlify="true">
+				<input type="hidden" name="subject" value="Art Inquiry From artfitzeverywhere.com" />
 				<label for="name">Name</label>
 				<input type="text" id="name" name="name" required>
 			  
@@ -148,7 +149,7 @@
 				<label for="message">Message</label>
 				<textarea id="message" name="message" required></textarea>
 				<div class="center-submit center">
-					<button type="submit" class="submitButton" value="Send message">Submit</button>
+					<button type="submit" class="submitButton">Submit</button>
 				</div>			  
 			</form>
 		</section>
