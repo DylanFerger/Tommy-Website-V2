@@ -37,7 +37,6 @@ html {
 * {
      font-family: sans-serif, serif;
      font-weight: 600;
-     overflow-x: hidden;
 }
 
 h1 {
@@ -81,7 +80,7 @@ header {
      flex-flow: column wrap;
      align-items: flex-start;
      justify-content: center;
-
+     overflow: hidden;
 }
 
 header h1{
