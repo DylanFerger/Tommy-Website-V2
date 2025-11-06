@@ -625,13 +625,12 @@ h3{
      background-color: #dad5c8;
 }
 
-.contact {
-     width: 80%;
-     margin: 0 auto;
+.contactLink .center-submit{
+     padding: 1rem 0;
 }
 
 .submitButton {
-     margin-top: 2rem;
+     margin: 2rem 0;
      padding: 2rem 4rem;
      font-size: 2rem;
      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
@@ -1024,6 +1023,7 @@ footer p {
           justify-content: center;
           gap: 10px;
           margin-top: 60px;
+          overflow: visible;
      }
      
      .dot {
